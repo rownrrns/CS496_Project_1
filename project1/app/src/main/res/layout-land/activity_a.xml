@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.project1.AActivity">
+
+    <TextView
+        android:id="@+id/selected_item_textview"
+        android:layout_width="455dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Number"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/Tel_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Tel_text"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:text="Tel : "
+        android:textSize="30sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/new_number"
+        android:layout_width="168dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/edit_number"
+        android:inputType="textPersonName"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/addwindow"
+        app:layout_constraintTop_toBottomOf="@+id/new_name" />
+
+    <Button
+        android:id="@+id/addwindow"
+        android:layout_width="38dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#414fed"
+        android:text="+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addnum"
+        android:layout_width="66dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:text="추가"
+        android:visibility="gone"
+        android:background="#3adc2b"
+        app:layout_constraintEnd_toStartOf="@+id/cancel_btn"
+        app:layout_constraintTop_toBottomOf="@+id/new_number" />
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="62dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginTop="16dp"
+        android:text="취소"
+        android:visibility="gone"
+        android:background="#3adc2b"
+        app:layout_constraintEnd_toStartOf="@+id/addwindow"
+        app:layout_constraintTop_toBottomOf="@+id/new_number" />
+
+    <Button
+        android:id="@+id/del_btn"
+        android:layout_width="64dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:text="삭제"
+        android:visibility="gone"
+        android:background="#f4f74e"
+        app:layout_constraintEnd_toStartOf="@+id/cancel_btn"
+        app:layout_constraintTop_toBottomOf="@+id/addnum" />
+
+    <EditText
+        android:id="@+id/new_name"
+        android:layout_width="167dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/edit_name"
+        android:inputType="textPersonName"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/addwindow"
+        app:layout_constraintTop_toBottomOf="@+id/selected_item_textview" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/new_number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selected_item_textview"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>

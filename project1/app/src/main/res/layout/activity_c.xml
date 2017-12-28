@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context="com.example.user.project1.CActivity">
+
+    <Button
+        android:id="@+id/ch1"
+        android:layout_width="128dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="144dp"
+        android:onClick="send1"
+        android:text="초보"
+        android:background="#4af49c"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ch3"
+        android:layout_width="128dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:onClick="send3"
+        android:text="고수"
+        android:background="#d4ed30"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ch1" />
+
+    <Button
+        android:id="@+id/ch2"
+        android:layout_width="128dp"
+        android:layout_height="84dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="144dp"
+        android:onClick="send2"
+        android:text="중수"
+        android:background="#40d5ef"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ch4"
+        android:layout_width="128dp"
+        android:layout_height="84dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="16dp"
+        android:onClick="send4"
+        android:text="고인물"
+        android:background="#c99931"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ch2" />
+
+    <EditText
+        android:id="@+id/levelview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+
+</android.support.constraint.ConstraintLayout>

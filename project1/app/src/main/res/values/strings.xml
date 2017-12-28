@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">project1</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+    <string name="contacts">Contacts</string>
+    <string name="gallery">Gallery</string>
+    <string name="edit_name">이름</string>
+    <string name="edit_number">전화번호</string>
+</resources>
